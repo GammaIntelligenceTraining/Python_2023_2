@@ -1,0 +1,10 @@
+Create a program that reads "big.txt" and counts:
+1. How many words is there in "big.txt"
+2. How many unique words is there in "big.txt"
+
+Symbols ("!", "?", ".", ",", "*") shouldn't affect uniqueness.
+Upper and lower case letters shouldn't affect uniquentss.
+
+Create a file with amounts of words and also all unique words in alphabetical order.
+
+window? = window = Window = WINDOW!

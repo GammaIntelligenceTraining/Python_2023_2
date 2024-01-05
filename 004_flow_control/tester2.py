@@ -20,4 +20,14 @@
 # print(10 / 0)
 # print(int('asdasd'))
 
-raise ValueError
+# raise ValueError
+
+# x = '027'
+#
+# print('019' <= x <= '021')
+
+chk1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+chk2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+idcode = '38803160272'
+
+check_num = (int(idcode[0]) * chk1[0] + int(idcode[1]) * chk1[1]) % 11
