@@ -1,0 +1,104 @@
+{
+  "employees": [
+    {
+      "name": "Abigail Curtis",
+      "role": "developer",
+      "gender": "female",
+      "info": {
+        "date_of_birth": "23.04.1995",
+        "phone": "85 555 555"
+      },
+      "salary": 1300
+    },
+    {
+      "name": "Erik Mägi",
+      "role": "designer",
+      "gender": "male",
+      "info": {
+        "date_of_birth": "15.08.1988",
+        "phone": "86 123 456"
+      },
+      "salary": 1600
+    },
+    {
+      "name": "Liisa Toom",
+      "role": "manager",
+      "gender": "female",
+      "info": {
+        "date_of_birth": "07.12.1980",
+        "phone": "88 987 654"
+      },
+      "salary": 2000
+    },
+    {
+      "name": "Markus Tamm",
+      "role": "engineer",
+      "gender": "male",
+      "info": {
+        "date_of_birth": "02.09.1992",
+        "phone": "81 234 567"
+      },
+      "salary": 1800
+    },
+    {
+      "name": "Kristiina Kask",
+      "role": "analyst",
+      "gender": "female",
+      "info": {
+        "date_of_birth": "12.06.1985",
+        "phone": "89 876 543"
+      },
+      "salary": 1700
+    },
+    {
+      "name": "Jaan Saar",
+      "role": "project_manager",
+      "gender": "male",
+      "info": {
+        "date_of_birth": "28.03.1979",
+        "phone": "85 321 789"
+      },
+      "salary": 2200
+    },
+    {
+      "name": "Triin Õun",
+      "role": "tester",
+      "gender": "female",
+      "info": {
+        "date_of_birth": "17.11.1990",
+        "phone": "87 654 321"
+      },
+      "salary": 1500
+    },
+    {
+      "name": "Raimond Kallas",
+      "role": "administrator",
+      "gender": "male",
+      "info": {
+        "date_of_birth": "09.05.1983",
+        "phone": "82 876 543"
+      },
+      "salary": 1900
+    },
+    {
+      "name": "Anu Pärn",
+      "role": "sales_representative",
+      "gender": "female",
+      "info": {
+        "date_of_birth": "05.08.1987",
+        "phone": "86 789 012"
+      },
+      "salary": 1600
+    },
+    {
+      "name": "Mihkel Mets",
+      "role": "data_scientist",
+      "gender": "male",
+      "info": {
+        "date_of_birth": "20.01.1998",
+        "phone": "84 321 098"
+      },
+      "salary": 2000
+    }
+  ]
+}
