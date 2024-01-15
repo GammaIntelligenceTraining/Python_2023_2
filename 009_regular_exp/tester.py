@@ -12,7 +12,7 @@ example.com
 123*555*1234
 800-555-1234
 900-555-1234
-Mr. Jones
+Mr. Jones ewrewrewr
 Mr Smith
 Ms Davis
 Mrs. Robinson
@@ -23,7 +23,10 @@ exampledcom
 example.company
 ball mall hall wall tall
 привет
-800-123-123123123
+800-12351231
+899-123-1231
+asdsadexample!comasdasdasd
+900-123-1234
 '''
 
 sentence = 'Start a sentence and then bring it to an end'
@@ -45,14 +48,13 @@ www.example.net
 example.net
 '''
 
-pattern = re.compile(r'(abc)|(def)|(ghi)')
+pattern = re.compile(r'a#comment', re.X)
+# pattern = re.compile(r'(http://|https://)?(www\.)?(\w+\.)([\w.]+)')
 
-search = re.sub(pattern, '123', text_to_search)
-print(search)
+match = pattern.finditer(text_to_search)
+# print(match)
 
 
 # matches = pattern.finditer(urls)
-# for match in matches:
-#     # print(match)
-#     # print(match.start(), match.end(), match.span(), match.group())
-#     print(match.group(4))
+for match in match:
+    print(match)
