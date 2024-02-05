@@ -2,8 +2,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import re
 
-# More information about python
-# https://tproger.ru/digest/data-science-python/#1
 
 df = pd.read_csv('csv_files//2019.csv')
 
