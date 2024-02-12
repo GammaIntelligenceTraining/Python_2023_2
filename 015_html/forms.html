@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="get">
+        <label for="user-name">User name:</label>
+        <input type="text" id="user-name" class="form-input form-element text-field" name="user-name"><br>
+        <label for="user-password">User password:</label>
+        <input type="password" id="user-password" class="form-input form-element text-field" name="user-password"><br>
+        CSS <input type="radio" name="prog_lang" value="css">
+        HTML <input type="radio" name="prog_lang" value="html">
+        JavaScript <input type="radio" name="prog_lang" value="js"><br>
+        News <input type="checkbox" name="newsletter" value="True"><br>
+        <select name="car" id="car">
+            <optgroup label="German cars">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="mb">Mercedes-Benz</option>
+            </optgroup>
+        </select><br>
+        <textarea cols="10" rows="10" name="message"></textarea><br>
+        <input type="button" value="BTN" onclick="alert('Hello world');"><br>
+        <input type="tel" pattern="" name="sort" value="ascending">
+        <input type="submit" value="Click me!">
+    </form>
+</body>
+</html>
