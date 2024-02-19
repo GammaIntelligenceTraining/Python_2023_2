@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We learn Flask today</title>
+</head>
+<body>
+
+    {% if content.name != '' %}
+        <h1>Hello {{ content.name|title }}!</h1>
+        {{ content.name|length }}
+    {% else %}
+        <h1>Hello stranger</h1>
+    {% endif %}
+    {% for person in content.names_lst %}
+        <p class="number">Hello {{ person }}</p>
+    {% endfor %}
+</body>
+</html>
