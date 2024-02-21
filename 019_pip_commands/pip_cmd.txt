@@ -13,6 +13,8 @@ pip uninstall <packagename>
 pip list
 pip list --outdated  # List outdated packages
 pip list -o
+pip list --uptodate
+pip list -u
 
 # show package info
 pip show <packagename>
