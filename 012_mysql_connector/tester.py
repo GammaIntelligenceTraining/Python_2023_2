@@ -1,58 +1,49 @@
 import mysql.connector
 
-conn = mysql.connector.connect(
+db = mysql.connector.connect(
     host='localhost',
     user='root',
     passwd='12345678',
-    database='python_test'
+    database='sakila'
 )
-conn.autocommit = True
+# db.autocommit = True
 
-my_cursor = conn.cursor()
-
-# try:
-#     my_cursor.execute('CREATE DATABASE python_test')
-#     print('Database was created!')
-# except:
-#     print('Database exists!')
-# try:
-#     my_cursor.execute('CREATE TABLE person (name VARCHAR(100), age INTEGER)')
-#     print('Table was created!')
-# except:
-#     print('Table exists!')
+mycursor = db.cursor()
 #
-# n = 'Jack'
-# a = 30
-# print(f'INSERT INTO person (name, age) VALUES ("{n}", {a});')
+# mycursor.execute('INSERT INTO car (make, model, year) VALUES ("VW", "PASSAT", "2000");')
+# mycursor.execute('INSERT INTO car (make, model, year) VALUES ("Honda", "Civic", "2005");')
+# mycursor.execute('INSERT INTO car (make, model, year) VALUES ("Toyota", "Corolla", "2023");')
 
-# my_cursor.execute(f'INSERT INTO person (name, age) VALUES ("Sarah", 25);')
-# my_cursor.execute(f'INSERT INTO person (name, age) VALUES ("Mary", 20);')
-# my_cursor.execute(f'INSERT INTO person (name, age) VALUES ("Bob", 18);')
-# conn.commit()
-# my_cursor.execute(f'INSERT INTO person (name, age) VALUES ("Jack", 30);')
-
-# person = ('Max', 28)
-# sql_formula = 'INSERT INTO person (name, age) VALUES (%s, %s);'
-# my_cursor.execute(sql_formula, person)
+# sql_formula = "INSERT INTO car (make, model, year) VALUES (%s, %s, %s);"
+# mycar = ("Honda", "CR-V", 2000)
+# # mycursor.execute(sql_formula, mycar)
 #
-# people = [('John', 17), ('Jessica', 23), ('George', 40)]
-# # my_cursor.executemany(sql_formula, people)
-# for p in people:
-#     my_cursor.execute(f'INSERT INTO person (name, age) VALUES ("{p[0]}", {p[1]});')
-# my_cursor.execute('SELECT * FROM person;')
+# cars = [("VAZ", "2103", 1985), ("Seat", "Leon", 2020), ("Ferrari", "360", "1990")]
+# mycursor.executemany(sql_formula, cars)
+#
+# for car in cars:
+#     mycursor.execute(f'INSERT INTO car (make, model, year) VALUES (\'{car[0]}\', \'{car[1]}\', \'{car[2]}\');')
 
-# result = my_cursor.fetchall()
-# print(result)
+# db.commit()
+# for line in mycursor:
+#     print(line)
 
-# for person in result:
-#     print(f'Hello {person[0]}')
 
-# result = my_cursor.fetchone()
-# result2 = my_cursor.fetchone()
-# print(result, result2)
+# mycursor.execute("SELECT * FROM actor;")
 
-# result = my_cursor.fetchmany(4)
-# result2 = my_cursor.fetchmany(4)
-# print(result, result2)
+# actor = mycursor.fetchall()
+# print(actor)
+# for _id, name, surname, date_added in actor:
+#     print(f'{name.title()} {surname.title()}')
 
-my_cursor.execute('DROP SCHEMA python_test')
+# actor1 = mycursor.fetchone()
+# actor2 = mycursor.fetchone()
+# print(actor1)
+# print(actor2)
+
+# for x in range(300):
+#     print(mycursor.fetchone())
+
+sql_formula = "SELECT * FROM actor WHERE first_name = %s"
+mycursor.execute(sql_formula, ("PENELOPE",))
+print(mycursor.fetchall())
