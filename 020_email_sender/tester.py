@@ -7,14 +7,14 @@ from email.mime.multipart import MIMEMultipart
 
 port = 465
 context = ssl.create_default_context()
-host = 'smtp.zone.eu'
-login = 'python-learning@mrartful.com'
-password = '8aS23!gh912'
+host = 'YOUR MAIL SERVER'
+login = 'YOUR LOGIN'
+password = 'YOUR PASSWORD'
 
 message = MIMEMultipart()
 message['Subject'] = 'Test email!'
 message['From'] = login
-message['To'] = 'roman.kutselepa@gmail.com'
+message['To'] = 'RECIEVERS EMAIL'
 
 text = '''Hi this message was sent by a script made with Python'''
 
@@ -30,4 +30,4 @@ message.attach(part2)
 
 with smtplib.SMTP_SSL(host, port) as server:
     server.login(login, password)
-    server.sendmail(login, 'roman.kutselepa@gmail.com', message.as_string())
+    server.sendmail(login, 'RECIEVERS EMAIL', message.as_string())

@@ -3,12 +3,12 @@ import smtplib, ssl
 # ! message is not RFC 5322 compliant: 'From' header is missing.
 # ! To reduce the amount of spam sent to Gmail, this message has been blocked
 
-smtp_server = 'smtp.zone.eu'
+smtp_server = 'EMAIL SERVER'
 port = 465
-sender_email = 'python-learning@mrartful.com'
+sender_email = 'SENDERS EMAIL'
 password_input = input('Enter password: ')
 
-reciever_email = 'roman.kutselepa@gmail.com'
+reciever_email = 'RECIEVERS EMAIL'
 message = 'Hello, this is a test message sent by python script.'
 
 # Create secure ssl context

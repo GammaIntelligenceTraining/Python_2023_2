@@ -2,10 +2,10 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-smtp_server = 'smtp.zone.eu'
+smtp_server = 'EMAIL SERVER'
 port = 465
-sender_email = 'python-learning@mrartful.com'
-reciever_email = 'roman.kutselepa@gmail.com'
+sender_email = 'SENDERS EMAIL'
+reciever_email = 'RECEIVERS EMAIL'
 password_input = input('Enter password: ')
 
 # NOTE message is now created through MIMEmultipart module

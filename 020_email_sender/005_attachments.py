@@ -5,10 +5,10 @@ from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-smtp_server = 'smtp.zone.eu'
+smtp_server = 'EMAIL SERVER'
 port = 465
-sender_email = 'python-learning@mrartful.com'
-reciever_email = 'roman.kutselepa@gmail.com'
+sender_email = 'SENDERS EMAIL'
+reciever_email = 'RECIEVERS EMAIL'
 password_input = input('Enter password: ')
 
 # NOTE message is now created through MIMEmultipart module
@@ -16,7 +16,7 @@ message = MIMEMultipart()
 message['Subject'] = 'Test email with python script.'
 message['From'] = sender_email
 message['To'] = reciever_email
-message['Bcc'] = 'mr.artfulx@gmail.com'  # message copy
+message['Bcc'] = 'COPY EMAIL'  # message copy
 
 text = '''\
 Hi, this message was sent by Python script for test purpouses.'''

@@ -1,8 +1,8 @@
 import smtplib, ssl
 
-smtp_server = 'smtp.zone.eu'
+smtp_server = 'EMAIL SERVER'
 port = 587
-sender_email = 'python-learning@mrartful.com'
+sender_email = 'SENDERS EMAIL'
 password_input = input('Enter password: ')
 
 # Create secure ssl context
